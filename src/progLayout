@@ -1,0 +1,21 @@
+#!/bin/bash
+
+# File at: /usr/local/bin/progLayout
+
+# Set the keyboard layout to the programmer layout (symbol/pr) with the spacebar as mod3 and
+# use xcape to generate a Space when released
+
+# It's a hassle to configure Gnome to be able to select the custom keymap from the keyboard layout applet
+# and to configure it from the GUI.
+# So let run this script at the starup of Xorg from xinit or 'Gnome startup application'
+setxkbmap pr iconofr
+
+# When change layout ansure that ther is not duplicate xcape instance otherwise you get multiple space characters.
+killall xcape
+
+# Map space to an unused keycode (to keep it around for xcape to
+# use). (https://github.com/alols/xcape)
+xmodmap -e "keycode any = space"
+
+xcape -e "#65=space"
+
