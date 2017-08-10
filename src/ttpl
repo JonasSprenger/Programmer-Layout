@@ -113,17 +113,17 @@ xkb_symbols "basic" {                                           // but it take t
     // Top row
     // --------------------------------------------------------------
     key.type[Group1] = "EIGHT_LEVEL_SEMIALPHABETIC";
-    key <AD01> { [ NoSymbol,                NoSymbol,            numbersign,              numbersign,              NoSymbol,                NoSymbol,                NoSymbol,                NoSymbol                  ] };
-    key <AD02> { [ NoSymbol,                NoSymbol,            braceleft,               braceleft,               NoSymbol,                NoSymbol,                NoSymbol,                NoSymbol                  ] };
-    key <AD03> { [ NoSymbol,                NoSymbol,            bracketleft,             bracketleft,             NoSymbol,                NoSymbol,                NoSymbol,                NoSymbol                  ] };
-    key <AD04> { [ NoSymbol,                NoSymbol,            parenleft,               parenleft,               NoSymbol,                NoSymbol,                NoSymbol,                NoSymbol                  ] };
-    key <AD05> { [ NoSymbol,                NoSymbol,            question,                question,                NoSymbol,                NoSymbol,                NoSymbol,                NoSymbol                  ] };
+    key <AD01> { [ NoSymbol,                NoSymbol,            numbersign,              numbersign,              NoSymbol,                NoSymbol,                NoSymbol,                NoSymbol                  ] }; // #
+    key <AD02> { [ NoSymbol,                NoSymbol,            braceleft,               braceleft,               NoSymbol,                NoSymbol,                NoSymbol,                NoSymbol                  ] }; // {
+    key <AD03> { [ NoSymbol,                NoSymbol,            bracketleft,             bracketleft,             NoSymbol,                NoSymbol,                NoSymbol,                NoSymbol                  ] }; // [
+    key <AD04> { [ NoSymbol,                NoSymbol,            parenleft,               parenleft,               NoSymbol,                NoSymbol,                NoSymbol,                NoSymbol                  ] }; // (
+    key <AD05> { [ NoSymbol,                NoSymbol,            question,                question,                NoSymbol,                NoSymbol,                NoSymbol,                NoSymbol                  ] }; // ?
     
-    key <AD06> { [ NoSymbol,                NoSymbol,            percent,                 5,                       NoSymbol,                NoSymbol,                Prior,                   Prior                     ] };
-    key <AD07> { [ NoSymbol,                NoSymbol,            slash,                   6,                       NoSymbol,                NoSymbol,                Page_Up,                 Page_Up                   ] };
-    key <AD08> { [ NoSymbol,                NoSymbol,            asterisk,                7,                       NoSymbol,                NoSymbol,                Up,                      Up                        ] };
-    key <AD09> { [ NoSymbol,                NoSymbol,            bar,                     8,                       NoSymbol,                NoSymbol,                Page_Down,               Page_Down                 ] };
-    key <AD10> { [ NoSymbol,                NoSymbol,            ampersand,               9,                       NoSymbol,                NoSymbol,                Next,                    Next                      ] };
+    key <AD06> { [ NoSymbol,                NoSymbol,            percent,                 5,                       NoSymbol,                NoSymbol,                Prior,                   Prior                     ] }; // % 5
+    key <AD07> { [ NoSymbol,                NoSymbol,            slash,                   6,                       NoSymbol,                NoSymbol,                Page_Up,                 Page_Up                   ] }; // / 6
+    key <AD08> { [ NoSymbol,                NoSymbol,            asterisk,                7,                       NoSymbol,                NoSymbol,                Up,                      Up                        ] }; // * 7
+    key <AD09> { [ NoSymbol,                NoSymbol,            bar,                     8,                       NoSymbol,                NoSymbol,                Page_Down,               Page_Down                 ] }; // | 8
+    key <AD10> { [ NoSymbol,                NoSymbol,            ampersand,               9,                       NoSymbol,                NoSymbol,                Next,                    Next                      ] }; // & 9
 
     //For debugin purpose set to number of the level 1 to 8
     key <AD11> { [ 1,                      2,                    3,                       4,                       5,                       6,                       7,                       8                         ] };
@@ -134,34 +134,35 @@ xkb_symbols "basic" {                                           // but it take t
     // Middle row
     // --------------------------------------------------------------
     key.type[Group1] = "EIGHT_LEVEL_SEMIALPHABETIC";
-    key <AC01> { [ NoSymbol,                NoSymbol,            underscore,              underscore,              NoSymbol,                NoSymbol,                NoSymbol,                NoSymbol                  ] };
-    key <AC02> { [ NoSymbol,                NoSymbol,            comma,                   comma,                   NoSymbol,                NoSymbol,                NoSymbol,                NoSymbol                  ] };
-    key <AC03> { [ NoSymbol,                NoSymbol,            period,                  period,                  NoSymbol,                NoSymbol,                NoSymbol,                NoSymbol                  ] };
-    key <AC04> { [ NoSymbol,                NoSymbol,            colon,                   colon,                   NoSymbol,                NoSymbol,                NoSymbol,                NoSymbol                  ] };
-    key <AC05> { [ NoSymbol,                NoSymbol,            exclam,                  exclam,                  NoSymbol,                NoSymbol,                NoSymbol,                NoSymbol                  ] };                                                                
-    key <AC06> { [ NoSymbol,                NoSymbol,            less,                    0,                       Home,                    Home,                    Home,                    Home                      ] };
-    key <AC07> { [ NoSymbol,                NoSymbol,            equal,                   1,                       Left,                    Left,                    Left,                    Left                      ] };
-    key <AC08> { [ NoSymbol,                NoSymbol,            greater,                 2,                       Down,                    Down,                    Down,                    Down                      ] };
-    key <AC09> { [ NoSymbol,                NoSymbol,            minus,                   3,                       Right,                   Right,                   Right,                   Right                     ] };
-    key <AC10> { [ NoSymbol,                NoSymbol,            plus,                    4,                       End,                     End,                     End,                     End                       ] };
+    key <AC01> { [ NoSymbol,                NoSymbol,            underscore,              underscore,              NoSymbol,                NoSymbol,                NoSymbol,                NoSymbol                  ] }; //  _
+    key <AC02> { [ NoSymbol,                NoSymbol,            comma,                   comma,                   NoSymbol,                NoSymbol,                NoSymbol,                NoSymbol                  ] }; // ,
+    key <AC03> { [ NoSymbol,                NoSymbol,            period,                  period,                  NoSymbol,                NoSymbol,                NoSymbol,                NoSymbol                  ] }; // .
+    key <AC04> { [ NoSymbol,                NoSymbol,            colon,                   colon,                   NoSymbol,                NoSymbol,                NoSymbol,                NoSymbol                  ] }; // :
+    key <AC05> { [ NoSymbol,                NoSymbol,            exclam,                  exclam,                  NoSymbol,                NoSymbol,                NoSymbol,                NoSymbol                  ] }; // !                                                              
+    key <AC06> { [ NoSymbol,                NoSymbol,            less,                    0,                       Home,                    Home,                    Home,                    Home                      ] }; // < 0
+    key <AC07> { [ NoSymbol,                NoSymbol,            equal,                   1,                       Left,                    Left,                    Left,                    Left                      ] }; // = 1
+    key <AC08> { [ NoSymbol,                NoSymbol,            greater,                 2,                       Down,                    Down,                    Down,                    Down                      ] }; // > 2
+    key <AC09> { [ NoSymbol,                NoSymbol,            minus,                   3,                       Right,                   Right,                   Right,                   Right                     ] }; // - 3
+    key <AC10> { [ NoSymbol,                NoSymbol,            plus,                    4,                       End,                     End,                     End,                     End                       ] }; // + 4
     
-    //Set AC11 to space in case xcape it not configurated for generate a space character on release
+    //Set AC11 to space in case xcape is not configurated for generate a space character on release
     key <AC11> { [ space,                  space,                space,                   space,                   NoSymbol,                NoSymbol,                NoSymbol,                NoSymbol                  ] };
     key <BKSL> { [ NoSymbol,               NoSymbol,             NoSymbol,                NoSymbol,                NoSymbol,                NoSymbol,                NoSymbol,                NoSymbol                  ] };
 
 
     // Bottom row
     // --------------------------------------------------------------
-    key <AB01> { [ NoSymbol,                NoSymbol,            circumflex,              NoSymbol,                NoSymbol,                NoSymbol,                NoSymbol,                NoSymbol                  ] };
-    key <AB02> { [ NoSymbol,                NoSymbol,            braceright,              NoSymbol,                NoSymbol,                NoSymbol,                NoSymbol,                NoSymbol                  ] };
-    key <AB03> { [ NoSymbol,                NoSymbol,            bracketright,            NoSymbol,                NoSymbol,                NoSymbol,                NoSymbol,                NoSymbol                  ] };
-    key <AB04> { [ NoSymbol,                NoSymbol,            parenright,              NoSymbol,                NoSymbol,                NoSymbol,                NoSymbol,                NoSymbol                  ] };
-    key <AB05> { [ NoSymbol,                NoSymbol,            semicolon,               NoSymbol,                NoSymbol,                NoSymbol,                NoSymbol,                NoSymbol                  ] };                                                                     
-    key <AB06> { [ NoSymbol,                NoSymbol,            dollar,                  NoSymbol,                NoSymbol,                NoSymbol,                NoSymbol,                NoSymbol                  ] };
-    key <AB07> { [ NoSymbol,                NoSymbol,            backslash,               NoSymbol,                NoSymbol,                NoSymbol,                NoSymbol,                NoSymbol                  ] };
-    key <AB08> { [ NoSymbol,                NoSymbol,            EuroSign,                NoSymbol,                NoSymbol,                NoSymbol,                NoSymbol,                NoSymbol                  ] };
-    key <AB09> { [ NoSymbol,	            NoSymbol,            asciitilde,              NoSymbol,                NoSymbol,                NoSymbol,                NoSymbol,                NoSymbol                  ] };
-    key <AB10> { [ NoSymbol,                NoSymbol,            at,                      NoSymbol,                NoSymbol,                NoSymbol,                NoSymbol,                NoSymbol                  ] };
+    key <AB01> { [ NoSymbol,                NoSymbol,            NoSymbol,                NoSymbol,                NoSymbol,                NoSymbol,                NoSymbol,                NoSymbol                  ] };  
+    key <AB02> { [ NoSymbol,                NoSymbol,            braceright,              NoSymbol,                NoSymbol,                NoSymbol,                NoSymbol,                NoSymbol                  ] }; // }
+    key <AB03> { [ NoSymbol,                NoSymbol,            bracketright,            NoSymbol,                NoSymbol,                NoSymbol,                NoSymbol,                NoSymbol                  ] }; // ]
+    key <AB04> { [ NoSymbol,                NoSymbol,            parenright,              NoSymbol,                NoSymbol,                NoSymbol,                NoSymbol,                NoSymbol                  ] }; // )
+    key <AB05> { [ NoSymbol,                NoSymbol,            semicolon,               NoSymbol,                NoSymbol,                NoSymbol,                NoSymbol,                NoSymbol                  ] }; // ;
+// 
+    key <AB06> { [ NoSymbol,                NoSymbol,            dollar,                  NoSymbol,                NoSymbol,                NoSymbol,                NoSymbol,                NoSymbol                  ] }; // $
+    key <AB07> { [ NoSymbol,                NoSymbol,            backslash,               NoSymbol,                NoSymbol,                NoSymbol,                NoSymbol,                NoSymbol                  ] }; // \
+    key <AB08> { [ NoSymbol,                NoSymbol,            EuroSign,                NoSymbol,                NoSymbol,                NoSymbol,                NoSymbol,                NoSymbol                  ] }; // €
+    key <AB09> { [ NoSymbol,	            NoSymbol,            asciitilde,              NoSymbol,                NoSymbol,                NoSymbol,                NoSymbol,                NoSymbol                  ] }; // ~
+    key <AB10> { [ NoSymbol,                NoSymbol,            at,                      NoSymbol,                NoSymbol,                NoSymbol,                NoSymbol,                NoSymbol                  ] }; // @
     
     key.type[Group1] = "EIGHT_LEVEL";
 
@@ -362,19 +363,41 @@ xkb_symbols "nbr_row_custom" {
 
     key.type[Group1] = "EIGHT_LEVEL_SEMIALPHABETIC";
 
-    key <TLDE> { [ asciicircum,            KP_Multiply            ] };
-    key <AE01> { [ ccedilla,               KP_1                   ] };
-    key <AE02> { [ eacute,                 KP_2                   ] };
-    key <AE03> { [ egrave,                 KP_3                   ] };
-    key <AE04> { [ agrave,                 KP_4                   ] };
-    key <AE05> { [ ugrave,                 KP_5                   ] };
-    key <AE06> { [ dead_circumflex,        KP_6                   ] };    
-    key <AE07> { [ at,                     KP_7                   ] };
-    key <AE08> { [ EuroSign,               KP_8                   ] };
-    key <AE09> { [ dollar,                 KP_9                   ] };
-    key <AE10> { [ KP_0,                   KP_0                   ] };
-    key <AE11> { [ KP_Subtract,            KP_Subtract            ] };
-    key <AE12> { [ KP_Add,                 KP_Add                 ] };
+    key <TLDE> { [ icircumflex,            U00EF,                 KP_Separator,                   KP_Decimal              ] }; // î ï = .
+    key <AE01> { [ oe,                     ae,                    KP_1,                       U263A                   ] }; // œ æ 1 ☺
+    key <AE02> { [ ecircumflex,            U00EB,                 KP_2,                       U1F603                  ] }; // ê ë 2 😃
+    key <AE03> { [ eacute,                 ocircumflex,           KP_3,                       U1F60E                  ] }; // ô ô 3 😎
+    key <AE04> { [ egrave,                 ucircumflex,           KP_4,                       U1F60A                  ] }; // è û 4 😊
+    key <AE05> { [ ocircumflex,            U00F6,                 KP_5,                       U1F60D                  ] }; // ô ö 5 😍
+    key <AE06> { [ mu,                     U00FC,                 KP_6,                       U1F604                  ] }; // µ ú 6 😄
+    key <AE07> { [ ugrave,                 uacute,                KP_7,                       U1F605                  ] }; // ù ú 7 😅
+    key <AE08> { [ agrave,                 acircumflex,           KP_8,                       U1F606                  ] }; // à â 8 😆
+    key <AE09> { [ ccedilla,               U00FF,                 KP_9,                       U1F601                  ] }; // ç ÿ 9 😁
+    key <AE10> { [ U2018,                  U2019,                 KP_0,                       U1F61C                  ] }; // ‘ ’ 0 😜
+    key <AE11> { [ U201C,                  U201D,                 KP_Add,                     KP_Multiply             ] }; // “ ” + *
+    key <AE12> { [ U00AB ,                 U00BB,                 KP_Subtract,                KP_Divide               ] }; // « » - /
+
+};
+
+// Custom row number: the French accented aharacters in direct acces with the upper case variant
+alphanumeric_keys
+xkb_symbols "nbr_row_test" {
+
+    key.type[Group1] = "EIGHT_LEVEL_SEMIALPHABETIC";
+
+    key <TLDE> { [ mu,                     U00EF,                 KP_Separator,                   KP_Decimal              ] }; // î ï = .
+    key <AE01> { [ oe,                     OE,                    KP_1,                       U263A                   ] }; // œ æ 1 ☺
+    key <AE02> { [ ecircumflex,            Ecircumflex,                 KP_2,                       U1F603                  ] }; // ê ë 2 😃
+    key <AE03> { [ eacute,                 Eacute,           KP_3,                       U1F60E                  ] }; // ô ô 3 😎
+    key <AE04> { [ egrave,                 Egrave,           KP_4,                       U1F60A                  ] }; // è û 4 😊
+    key <AE05> { [ ocircumflex,            Ocircumflex,                 KP_5,                       U1F60D                  ] }; // ô ö 5 😍
+    key <AE06> { [ ucircumflex,            Ucircumflex,                 KP_6,                       U1F604                  ] }; // µ ú 6 😄
+    key <AE07> { [ ugrave,                 Ugrave,                KP_7,                       U1F605                  ] }; // ù ú 7 😅
+    key <AE08> { [ agrave,                 Agrave,           KP_8,                       U1F606                  ] }; // à â 8 😆
+    key <AE09> { [ ccedilla,               Ccedilla,                 KP_9,                       U1F601                  ] }; // ç ÿ 9 😁
+    key <AE10> { [ U2018,                  U2019,                 KP_0,                       U1F61C                  ] }; // ‘ ’ 0 😜
+    key <AE11> { [ U201C,                  U201D,                 KP_Add,                     KP_Multiply             ] }; // “ ” + *
+    key <AE12> { [ U00AB ,                 U00BB,                 KP_Subtract,                KP_Divide               ] }; // « » - /
 
 };
 
