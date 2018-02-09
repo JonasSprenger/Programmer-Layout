@@ -4,11 +4,11 @@ Let's designing a keyboard layout for "Touch Typing" Code!
 ## Why?
 To keep focus and stay in the flow while coding it will be nice if we could write code in a touch typing way.
 
-And not have to look at each symbol key will typing (unless doing many typos!).
+And not having to look at each symbol key will typing (unless doing many typos!).
 
 For the classic programming characters like: `( [ { * / | & + -`
 
-As well, for the funny symbol functions e.g. :`-> ; => ; ++= ; :: ; /: ; === ; :>`
+As well, for the funny symbol functions e.g. :`->` `=>` `++=` `::` `/:` `===` `:>`
   
 ## How?
 If you are reading this, there is a big chance you have already some muscle memory for typing
